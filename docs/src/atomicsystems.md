@@ -26,7 +26,7 @@ An `Atom` object can be constructed
 just by passing an identifier (e.g. symbol like `:C`, atomic number like `6`) and a vector
 of positions as
 ```julia
-atom = Atoms(:C, [0, 1, 2.]u"bohr")
+atom = AtomsBase.Atom(:C, [0, 1, 2.]u"bohr")
 ```
 This automatically fills the atom with standard data such as the atomic mass. Such data
 can be accessed using the `AtomsBase` interface functions
